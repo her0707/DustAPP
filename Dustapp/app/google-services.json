@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "368282168299",
+    "firebase_url": "https://dust-c6ce1.firebaseio.com",
+    "project_id": "dust-c6ce1",
+    "storage_bucket": "dust-c6ce1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368282168299:android:de4e781b0c344ef5",
+        "android_client_info": {
+          "package_name": "com.myapp.dustapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368282168299-4cg7ca34rk62k9orv171sgddv5aaec45.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myapp.dustapp",
+            "certificate_hash": "2bcaa90419df0a289a6cc0f88a143c0c4f048b84"
+          }
+        },
+        {
+          "client_id": "368282168299-9cs8lp5dc7bf9khlcm1l4ro6kseu4mul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqh7fWQnLcu5tf9oqMCteX3FvqA2Sh8a4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368282168299-9cs8lp5dc7bf9khlcm1l4ro6kseu4mul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

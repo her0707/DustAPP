@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#87ceeb"
+            tools:context="com.myapp.dust.MainActivity"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/menu"/>
+
+
+                <ImageButton
+                    android:id="@+id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="20dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/add" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/pm10value"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="20dp"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/pm10value"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="125dp" />
+
+                <TextView
+                    android:id="@+id/pm10grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pm10value"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+
+                <ImageButton
+                    android:id="@+id/refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="20dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/refresh" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="초미세먼지2.5"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/pm25value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="통합대기지수"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/khaivalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50dp" />
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+    <!-- The navigation drawer -->
+    <ListView android:id="@+id/listView"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#FFFFFF"/>
+</android.support.v4.widget.DrawerLayout>
+
